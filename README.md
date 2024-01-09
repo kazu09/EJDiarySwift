@@ -1,1 +1,1 @@
-# EJ　Diary
+# EJ Diary
