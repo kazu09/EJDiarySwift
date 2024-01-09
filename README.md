@@ -1,1 +1,1 @@
-# EJDiarySwift
+# EJ　Diary
