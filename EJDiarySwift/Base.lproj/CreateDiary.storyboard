@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9RK-kb-KiU">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Create Diary View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="CreateDiaryViewController" customModule="EJDiarySwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SXK-ay-RWv">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ZNr-WG-c3n">
+                                <rect key="frame" x="30" y="384.66666666666669" width="333" height="180.00000000000006"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="180" id="hNM-cP-74i"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" keyboardType="alphabet"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eWx-FB-g1G">
+                                <rect key="frame" x="30" y="708" width="333" height="35"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="19"/>
+                                <color key="tintColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="日本語の日記を隠す"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="jpHideButtonEvent:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="wjv-nh-UO9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hAj-DD-jmN">
+                                <rect key="frame" x="30" y="651" width="333" height="37"/>
+                                <color key="backgroundColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="保存">
+                                    <fontDescription key="titleFontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="19"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="0eW-CA-KTD">
+                                <rect key="frame" x="30" y="153.66666666666666" width="333" height="179.99999999999997"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="180" id="Gp2-VE-QWU"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="日本語の日記" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X1p-ym-kdV">
+                                <rect key="frame" x="30" y="123.00000000000001" width="96" height="20.666666666666671"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="English diary" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HxL-iQ-t2x">
+                                <rect key="frame" x="30" y="353.66666666666669" width="105" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AHG-ea-c1d">
+                                <rect key="frame" x="30" y="763" width="333" height="35"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="19"/>
+                                <color key="tintColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Hide english diary"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="enHideButtonEvent:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="BLp-Sj-J1X"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="非表示中..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cSJ-42-NsI">
+                                <rect key="frame" x="40" y="233" width="313" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="hidden..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UO7-g7-S99">
+                                <rect key="frame" x="40" y="463.66666666666669" width="313" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Spd-2S-TpE"/>
+                        <color key="backgroundColor" red="0.83581250910000005" green="0.99236553910000003" blue="0.98862093689999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="cSJ-42-NsI" firstAttribute="leading" secondItem="Spd-2S-TpE" secondAttribute="leading" constant="40" id="1Jx-8E-JTL"/>
+                            <constraint firstItem="Spd-2S-TpE" firstAttribute="trailing" secondItem="AHG-ea-c1d" secondAttribute="trailing" constant="30" id="1RD-dw-WZy"/>
+                            <constraint firstItem="hAj-DD-jmN" firstAttribute="leading" secondItem="Spd-2S-TpE" secondAttribute="leading" constant="30" id="5oZ-fk-haI"/>
+                            <constraint firstItem="HxL-iQ-t2x" firstAttribute="leading" secondItem="Spd-2S-TpE" secondAttribute="leading" constant="30" id="66x-lN-j5l"/>
+                            <constraint firstItem="X1p-ym-kdV" firstAttribute="leading" secondItem="Spd-2S-TpE" secondAttribute="leading" constant="30" id="7oh-Pp-rZB"/>
+                            <constraint firstItem="0eW-CA-KTD" firstAttribute="top" secondItem="X1p-ym-kdV" secondAttribute="bottom" constant="10" id="7tX-WF-3CO"/>
+                            <constraint firstItem="eWx-FB-g1G" firstAttribute="leading" secondItem="Spd-2S-TpE" secondAttribute="leading" constant="30" id="CGm-Tw-oMh"/>
+                            <constraint firstItem="Spd-2S-TpE" firstAttribute="trailing" secondItem="cSJ-42-NsI" secondAttribute="trailing" constant="40" id="D1g-RE-Dod"/>
+                            <constraint firstItem="Spd-2S-TpE" firstAttribute="bottom" secondItem="AHG-ea-c1d" secondAttribute="bottom" constant="20" id="M0a-hf-vBz"/>
+                            <constraint firstItem="AHG-ea-c1d" firstAttribute="top" secondItem="eWx-FB-g1G" secondAttribute="bottom" constant="20" id="NkX-dv-iw5"/>
+                            <constraint firstItem="Spd-2S-TpE" firstAttribute="trailing" secondItem="eWx-FB-g1G" secondAttribute="trailing" constant="30" id="TBS-7q-uFI"/>
+                            <constraint firstItem="Spd-2S-TpE" firstAttribute="trailing" secondItem="0eW-CA-KTD" secondAttribute="trailing" constant="30" id="Tn4-fH-aWC"/>
+                            <constraint firstItem="Spd-2S-TpE" firstAttribute="trailing" secondItem="UO7-g7-S99" secondAttribute="trailing" constant="40" id="VQC-dW-hTT"/>
+                            <constraint firstItem="ZNr-WG-c3n" firstAttribute="top" secondItem="HxL-iQ-t2x" secondAttribute="bottom" constant="10" id="Wig-4s-f4L"/>
+                            <constraint firstItem="HxL-iQ-t2x" firstAttribute="top" secondItem="0eW-CA-KTD" secondAttribute="bottom" constant="20" id="ahk-zZ-JE8"/>
+                            <constraint firstItem="ZNr-WG-c3n" firstAttribute="leading" secondItem="Spd-2S-TpE" secondAttribute="leading" constant="30" id="c3G-uH-sdX"/>
+                            <constraint firstItem="X1p-ym-kdV" firstAttribute="top" secondItem="Spd-2S-TpE" secondAttribute="top" constant="20" id="gC3-Z8-wOx"/>
+                            <constraint firstItem="UO7-g7-S99" firstAttribute="top" secondItem="0eW-CA-KTD" secondAttribute="bottom" constant="130" id="jSq-1x-mBf"/>
+                            <constraint firstItem="Spd-2S-TpE" firstAttribute="trailing" secondItem="ZNr-WG-c3n" secondAttribute="trailing" constant="30" id="oMu-HG-aja"/>
+                            <constraint firstItem="cSJ-42-NsI" firstAttribute="top" secondItem="Spd-2S-TpE" secondAttribute="top" constant="130" id="pPc-hN-qcK"/>
+                            <constraint firstItem="AHG-ea-c1d" firstAttribute="leading" secondItem="Spd-2S-TpE" secondAttribute="leading" constant="30" id="qby-8Q-35x"/>
+                            <constraint firstItem="Spd-2S-TpE" firstAttribute="trailing" secondItem="hAj-DD-jmN" secondAttribute="trailing" constant="30" id="sFF-4p-gnH"/>
+                            <constraint firstItem="0eW-CA-KTD" firstAttribute="leading" secondItem="Spd-2S-TpE" secondAttribute="leading" constant="30" id="szv-Kd-ziC"/>
+                            <constraint firstItem="eWx-FB-g1G" firstAttribute="top" secondItem="hAj-DD-jmN" secondAttribute="bottom" constant="20" id="tTf-EL-WrH"/>
+                            <constraint firstItem="UO7-g7-S99" firstAttribute="leading" secondItem="Spd-2S-TpE" secondAttribute="leading" constant="40" id="xNt-yw-PA4"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="JLo-AL-C0q">
+                        <barButtonItem key="leftBarButtonItem" title="Item" id="poa-sL-k9F"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="enHideButton" destination="AHG-ea-c1d" id="c4l-D8-FVu"/>
+                        <outlet property="enHideText" destination="UO7-g7-S99" id="nEa-51-Tni"/>
+                        <outlet property="enTextInput" destination="ZNr-WG-c3n" id="pg2-J8-lP4"/>
+                        <outlet property="jpHideButton" destination="eWx-FB-g1G" id="zHI-1x-F67"/>
+                        <outlet property="jpHideText" destination="cSJ-42-NsI" id="xI1-et-j7U"/>
+                        <outlet property="jpTextInput" destination="0eW-CA-KTD" id="ZUx-H9-mXm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1057.2519083969464" y="-34.507042253521128"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="810-lz-H2x">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="9RK-kb-KiU" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="rfO-gT-Siy">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.45341575150000002" green="0.97893852000000003" blue="0.99220091099999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="8Wy-cd-byO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OUF-Kx-y8c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130.53435114503816" y="-34.507042253521128"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
