@@ -1,0 +1,21 @@
+
+/* Class = "UINavigationItem"; title = "テスト枠"; ObjectID = "89v-Ul-4A3"; */
+"89v-Ul-4A3.title" = "テスト枠";
+
+/* Class = "UIButton"; configuration.title = "日本語を隠す"; ObjectID = "Idn-UL-fkN"; */
+"Idn-UL-fkN.configuration.title" = "日本語を隠す";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Idn-UL-fkN"; */
+"Idn-UL-fkN.normalTitle" = "Button";
+
+/* Class = "UITextField"; placeholder = "英語を入力"; ObjectID = "PHz-Uc-TIF"; */
+"PHz-Uc-TIF.placeholder" = "英語を入力";
+
+/* Class = "UIButton"; configuration.title = "保存"; ObjectID = "bGS-ml-3cm"; */
+"bGS-ml-3cm.configuration.title" = "保存";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "bGS-ml-3cm"; */
+"bGS-ml-3cm.normalTitle" = "Button";
+
+/* Class = "UITextField"; placeholder = "日本語を入力"; ObjectID = "xnZ-R4-Af5"; */
+"xnZ-R4-Af5.placeholder" = "日本語を入力";

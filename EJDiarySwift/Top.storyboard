@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ma6-T7-kCw">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Top View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="TopViewController" customModule="EJDiarySwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="NMf-TE-Fau">
+                                <rect key="frame" x="0.0" y="92" width="414" height="680"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="sectionIndexBackgroundColor" red="0.83581250910000005" green="0.99236553910000003" blue="0.98862093689999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="diaryCell" id="CEK-i7-6gN">
+                                        <rect key="frame" x="0.0" y="50" width="414" height="44.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="CEK-i7-6gN" id="IfH-B5-Az0">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.83581250910000005" green="0.99236553910000003" blue="0.98862093689999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Y6W-OH-hqX" id="bjA-E5-Xyz"/>
+                                    <outlet property="delegate" destination="Y6W-OH-hqX" id="RJY-fZ-MRh"/>
+                                </connections>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n8j-UD-Jc2">
+                                <rect key="frame" x="314" y="792" width="70" height="70"/>
+                                <color key="backgroundColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="J2t-fs-Vtx"/>
+                                    <constraint firstAttribute="width" constant="70" id="n0Q-Ru-lCM"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="＋">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="35"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="createDiaryButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="zRm-X4-fxS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="NMf-TE-Fau" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="84v-II-BWq"/>
+                            <constraint firstItem="n8j-UD-Jc2" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" id="Uy0-sC-BFA"/>
+                            <constraint firstItem="NMf-TE-Fau" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="bxw-zZ-1hB"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="NMf-TE-Fau" secondAttribute="bottom" constant="90" id="eOx-OS-fVV"/>
+                            <constraint firstItem="NMf-TE-Fau" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="mhD-58-hUm"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="n8j-UD-Jc2" secondAttribute="trailing" constant="30" id="zwO-4s-b85"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="tLr-Bw-cpL">
+                        <barButtonItem key="rightBarButtonItem" id="HsL-Np-jsb"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="createButton" destination="n8j-UD-Jc2" id="NaJ-aq-fD9"/>
+                        <segue destination="Ipv-5r-ozm" kind="show" identifier="toDiary" id="tTi-Ex-UkJ"/>
+                        <segue destination="Jzt-af-jkJ" kind="show" identifier="toCreateDiary" id="vXC-iv-HKM"/>
+                        <segue destination="65L-0w-nR7" kind="show" identifier="toConfig" id="i9o-wD-oep"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="921.73913043478262" y="-34.151785714285715"/>
+        </scene>
+        <!--Config-->
+        <scene sceneID="XxF-ja-SbT">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Config" id="65L-0w-nR7" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="E20-BR-o5B"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I8U-P4-vw5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1468" y="-161"/>
+        </scene>
+        <!--Diary-->
+        <scene sceneID="iSw-p7-sSe">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Diary" id="Ipv-5r-ozm" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="lLu-iH-k4U"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OEi-bm-IjB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1533.3333333333335" y="-18.080357142857142"/>
+        </scene>
+        <!--CreateDiary-->
+        <scene sceneID="Pxw-2O-4bK">
+            <objects>
+                <viewControllerPlaceholder storyboardName="CreateDiary" id="Jzt-af-jkJ" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="1pA-8b-9OD"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zya-yc-XM7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1470.289855072464" y="171.42857142857142"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="bnt-gL-pmE">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ma6-T7-kCw" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="cs6-WQ-cSB">
+                        <rect key="frame" x="0.0" y="48" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="mhG-WF-JWr"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IkO-aR-8w5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="11.594202898550726" y="-34.151785714285715"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
