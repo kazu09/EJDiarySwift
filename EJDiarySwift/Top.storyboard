@@ -69,6 +69,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="createButton" destination="n8j-UD-Jc2" id="NaJ-aq-fD9"/>
+                        <outlet property="tableView" destination="NMf-TE-Fau" id="VMc-qF-DuN"/>
                         <segue destination="Ipv-5r-ozm" kind="show" identifier="toDiary" id="tTi-Ex-UkJ"/>
                         <segue destination="Jzt-af-jkJ" kind="show" identifier="toCreateDiary" id="vXC-iv-HKM"/>
                         <segue destination="65L-0w-nR7" kind="show" identifier="toConfig" id="i9o-wD-oep"/>
