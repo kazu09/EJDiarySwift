@@ -8,6 +8,7 @@
 import UIKit
 
 class CreateDiaryViewController: UIViewController {
+    var diary: DiaryInfo?
     // InputArea
     @IBOutlet weak var jpTextInput: UITextView!
     @IBOutlet weak var enTextInput: UITextView!

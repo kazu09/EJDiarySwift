@@ -8,6 +8,7 @@
 import UIKit
 
 class DiaryViewController: UIViewController {
+    var diary: DiaryInfo?
     // Inputエリア
     @IBOutlet weak var jpTextInput: UITextView!
     @IBOutlet weak var enTextInput: UITextView!
@@ -22,6 +23,10 @@ class DiaryViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        if let diary = diary {
+            jpTextInput.text = diary.jpText
+            enTextInput.text = diary.enText
+        }
         initView()
     }
 
