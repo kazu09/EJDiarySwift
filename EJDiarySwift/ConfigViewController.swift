@@ -36,5 +36,22 @@ class ConfigViewController: UIViewController {
         navigationItem.leftBarButtonItem = leftButton
         leftButton.tintColor = .white
     }
-
+    
+    /** Debug Area  */
+    
+    @IBAction func dataDeleteButton(_ sender: Any) {
+        print("dataDeleteButton!")
+        if let diary = CoreDataManager.shared.fetchAllDiaryInfoes().first {
+            CoreDataManager.shared.deleteDiary(diary: diary)
+        }
+    }
+    
+    @IBAction func datafetchButton(_ sender: Any) {
+        // データの取得
+        print("datafetchButton!")
+        let diaries = CoreDataManager.shared.fetchAllDiaryInfoes()
+        for diary in diaries {
+            print("Title: \(diary.title ?? ""), Date: \(diary.date ?? Date()), JpText: \(diary.jpText ?? ""), IsJpTextHide : \(diary.isJpTextHide), enText: \(diary.enText ?? ""), IsEnTextHide: \(diary.isEnTextHide) ")
+        }
+    }
 }

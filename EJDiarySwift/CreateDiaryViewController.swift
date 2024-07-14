@@ -85,4 +85,19 @@ class CreateDiaryViewController: UIViewController {
             
         }
     }
+    
+    @IBAction func saveButton(_ sender: Any) {
+        
+        let date = Date()
+        let jpText = jpTextInput.text!
+        let enText = enTextInput.text!
+        // Todo
+        let isJpTextHide = false
+        let isEnTextHide = false
+        let title = ""
+        
+        // Create Data.
+        CoreDataManager.shared.createDiaryInfo(date: date, jpText: jpText, isJpTextHide: isJpTextHide, enText: enText, isEnTextHide: isEnTextHide, title: title)
+        dismiss(animated: true, completion: nil)
+    }
 }
