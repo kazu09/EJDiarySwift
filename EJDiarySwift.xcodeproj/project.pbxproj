@@ -24,6 +24,9 @@
 		96E3DDB92C42306200E82B8A /* Config.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96E3DDB82C42306200E82B8A /* Config.storyboard */; };
 		96E3DDBB2C4248D000E82B8A /* ConfigViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E3DDBA2C4248D000E82B8A /* ConfigViewController.swift */; };
 		96EF366C2C3A23A400C22935 /* StatusBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96EF366B2C3A23A400C22935 /* StatusBar.swift */; };
+		96EF9D9D2C4365D900576751 /* DiaryInfo+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96EF9D9B2C4365D900576751 /* DiaryInfo+CoreDataClass.swift */; };
+		96EF9D9E2C4365D900576751 /* DiaryInfo+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96EF9D9C2C4365D900576751 /* DiaryInfo+CoreDataProperties.swift */; };
+		96EF9DA02C43688700576751 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96EF9D9F2C43688700576751 /* CoreDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +68,9 @@
 		96E3DDB82C42306200E82B8A /* Config.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Config.storyboard; sourceTree = "<group>"; };
 		96E3DDBA2C4248D000E82B8A /* ConfigViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigViewController.swift; sourceTree = "<group>"; };
 		96EF366B2C3A23A400C22935 /* StatusBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBar.swift; sourceTree = "<group>"; };
+		96EF9D9B2C4365D900576751 /* DiaryInfo+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DiaryInfo+CoreDataClass.swift"; sourceTree = "<group>"; };
+		96EF9D9C2C4365D900576751 /* DiaryInfo+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DiaryInfo+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		96EF9D9F2C43688700576751 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +121,9 @@
 		962DE1FE2B4D8B22006BDD44 /* EJDiarySwift */ = {
 			isa = PBXGroup;
 			children = (
+				96EF9D9B2C4365D900576751 /* DiaryInfo+CoreDataClass.swift */,
+				96EF9D9C2C4365D900576751 /* DiaryInfo+CoreDataProperties.swift */,
+				96EF9D9F2C43688700576751 /* CoreDataManager.swift */,
 				962DE1FF2B4D8B22006BDD44 /* AppDelegate.swift */,
 				962DE2012B4D8B22006BDD44 /* SceneDelegate.swift */,
 				96EF366B2C3A23A400C22935 /* StatusBar.swift */,
@@ -290,9 +299,12 @@
 				96EF366C2C3A23A400C22935 /* StatusBar.swift in Sources */,
 				962DE2042B4D8B22006BDD44 /* DiaryViewController.swift in Sources */,
 				962DE2002B4D8B22006BDD44 /* AppDelegate.swift in Sources */,
+				96EF9D9D2C4365D900576751 /* DiaryInfo+CoreDataClass.swift in Sources */,
+				96EF9D9E2C4365D900576751 /* DiaryInfo+CoreDataProperties.swift in Sources */,
 				96E3DDBB2C4248D000E82B8A /* ConfigViewController.swift in Sources */,
 				962DE20A2B4D8B22006BDD44 /* EJDiarySwift.xcdatamodeld in Sources */,
 				962DE2022B4D8B22006BDD44 /* SceneDelegate.swift in Sources */,
+				96EF9DA02C43688700576751 /* CoreDataManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

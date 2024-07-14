@@ -56,6 +56,9 @@
                                         <integer key="value" value="16"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="save:" destination="Ol4-Ux-YJ7" eventType="touchUpInside" id="OaF-IZ-9dE"/>
+                                </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="pMc-C4-U01">
                                 <rect key="frame" x="30" y="142.5" width="354" height="180"/>
@@ -149,6 +152,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <exit id="Ol4-Ux-YJ7" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="4926.0869565217399" y="-251.78571428571428"/>
         </scene>
