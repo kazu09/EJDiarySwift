@@ -58,6 +58,7 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="save:" destination="Ol4-Ux-YJ7" eventType="touchUpInside" id="OaF-IZ-9dE"/>
+                                    <action selector="updateButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6qg-cf-Vh0"/>
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="pMc-C4-U01">

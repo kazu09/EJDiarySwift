@@ -9,7 +9,7 @@ import UIKit
 
 extension UIViewController {
     private final class StatusBarView: UIView { }
-
+    
     func setStatusBarBackgroundColor(_ color: UIColor?) {
         for subView in self.view.subviews where subView is StatusBarView {
             subView.removeFromSuperview()
