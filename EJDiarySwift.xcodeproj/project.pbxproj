@@ -504,6 +504,7 @@
 				DEVELOPMENT_TEAM = 4TA8835JC2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = EJDiarySwift/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "EJ Diary";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Top;
@@ -534,6 +535,7 @@
 				DEVELOPMENT_TEAM = 4TA8835JC2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = EJDiarySwift/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "EJ Diary";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Top;
