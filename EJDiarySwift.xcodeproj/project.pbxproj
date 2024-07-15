@@ -23,6 +23,7 @@
 		96DF0A652C3C13E100C29D28 /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DF0A642C3C13E100C29D28 /* TopViewController.swift */; };
 		96E3DDB92C42306200E82B8A /* Config.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96E3DDB82C42306200E82B8A /* Config.storyboard */; };
 		96E3DDBB2C4248D000E82B8A /* ConfigViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E3DDBA2C4248D000E82B8A /* ConfigViewController.swift */; };
+		96E443D02C44A5C600F723DE /* UiColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E443CF2C44A5C600F723DE /* UiColor.swift */; };
 		96EF366C2C3A23A400C22935 /* StatusBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96EF366B2C3A23A400C22935 /* StatusBar.swift */; };
 		96EF9D9D2C4365D900576751 /* DiaryInfo+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96EF9D9B2C4365D900576751 /* DiaryInfo+CoreDataClass.swift */; };
 		96EF9D9E2C4365D900576751 /* DiaryInfo+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96EF9D9C2C4365D900576751 /* DiaryInfo+CoreDataProperties.swift */; };
@@ -67,6 +68,7 @@
 		96DF0A642C3C13E100C29D28 /* TopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopViewController.swift; sourceTree = "<group>"; };
 		96E3DDB82C42306200E82B8A /* Config.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Config.storyboard; sourceTree = "<group>"; };
 		96E3DDBA2C4248D000E82B8A /* ConfigViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigViewController.swift; sourceTree = "<group>"; };
+		96E443CF2C44A5C600F723DE /* UiColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UiColor.swift; sourceTree = "<group>"; };
 		96EF366B2C3A23A400C22935 /* StatusBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBar.swift; sourceTree = "<group>"; };
 		96EF9D9B2C4365D900576751 /* DiaryInfo+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DiaryInfo+CoreDataClass.swift"; sourceTree = "<group>"; };
 		96EF9D9C2C4365D900576751 /* DiaryInfo+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DiaryInfo+CoreDataProperties.swift"; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 				962DE2032B4D8B22006BDD44 /* DiaryViewController.swift */,
 				9680268A2C40099C007950D8 /* CreateDiaryViewController.swift */,
 				96DF0A642C3C13E100C29D28 /* TopViewController.swift */,
+				96E443CF2C44A5C600F723DE /* UiColor.swift */,
 				96E3DDBA2C4248D000E82B8A /* ConfigViewController.swift */,
 				96DF0A622C3C13B900C29D28 /* Top.storyboard */,
 				96E3DDB82C42306200E82B8A /* Config.storyboard */,
@@ -295,6 +298,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				96DF0A652C3C13E100C29D28 /* TopViewController.swift in Sources */,
+				96E443D02C44A5C600F723DE /* UiColor.swift in Sources */,
 				9680268B2C40099D007950D8 /* CreateDiaryViewController.swift in Sources */,
 				96EF366C2C3A23A400C22935 /* StatusBar.swift in Sources */,
 				962DE2042B4D8B22006BDD44 /* DiaryViewController.swift in Sources */,

@@ -8,13 +8,17 @@
 import UIKit
 
 class CreateDiaryViewController: UIViewController {
+    // diary info
     var diary: DiaryInfo?
+    
     // InputArea
     @IBOutlet weak var jpTextInput: UITextView!
     @IBOutlet weak var enTextInput: UITextView!
+    
     // Button
     @IBOutlet weak var jpHideButton: UIButton!
     @IBOutlet weak var enHideButton: UIButton!
+    
     // Text
     @IBOutlet weak var jpHideText: UILabel!
     @IBOutlet weak var enHideText: UILabel!
@@ -36,7 +40,7 @@ class CreateDiaryViewController: UIViewController {
     /**
      Init view.
      */
-    func initView() {
+    private func initView() {
         setStatusBarBackgroundColor(.cyan)
         initNavigation()
         jpHideText.isHidden = true
@@ -46,7 +50,7 @@ class CreateDiaryViewController: UIViewController {
     /**
      Init Navigation area.
      */
-    func initNavigation() {
+    private func initNavigation() {
         navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
         title = "New Diary"
         
@@ -55,9 +59,6 @@ class CreateDiaryViewController: UIViewController {
         leftButton.tintColor = .white
     }
     
-    /**
-     Change the jp text area to visible or invisible.
-     */
     @IBAction func jpHideButtonEvent(_ sender: Any) {
         if (jpTextInput.isHidden) {
             jpTextInput.isHidden = false
@@ -71,9 +72,6 @@ class CreateDiaryViewController: UIViewController {
         
     }
     
-    /**
-     Change the en text area to visible or invisible.
-     */
     @IBAction func enHideButtonEvent(_ sender: Any) {
         if (enTextInput.isHidden) {
             enTextInput.isHidden = false
@@ -88,13 +86,12 @@ class CreateDiaryViewController: UIViewController {
     }
     
     @IBAction func saveButton(_ sender: Any) {
-        
         let date = Date()
         let jpText = jpTextInput.text!
         let enText = enTextInput.text!
-        // Todo
         let isJpTextHide = false
         let isEnTextHide = false
+        // unused index
         let title = ""
         
         // Create Data.

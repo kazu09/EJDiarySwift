@@ -8,12 +8,16 @@
 import UIKit
 
 class TopViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+    // instance
     private let coreDataManager = CoreDataManager.shared
     
+    // table view
     @IBOutlet weak var tableView: UITableView!
     
+    // button
     @IBOutlet weak var createButton: UIButton!
     
+    // datalist
     private var dataList: [DiaryInfo] = []
     
     override func viewDidLoad() {
@@ -24,9 +28,10 @@ class TopViewController: UIViewController, UITableViewDataSource, UITableViewDel
     }
     
     override func viewWillAppear(_ animated: Bool) {
-            super.viewWillAppear(animated)
-            fetchData()
-        }
+        super.viewWillAppear(animated)
+        fetchData()
+        checkDisabledButton()
+    }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "toDiary" {
@@ -87,7 +92,7 @@ class TopViewController: UIViewController, UITableViewDataSource, UITableViewDel
     }
     
     /**
-     get caredata.
+     Get caredata.
      */
     private func fetchAllDiaries() -> [DiaryInfo] {
         return coreDataManager.fetchAllDiaryInfoes()
@@ -121,24 +126,35 @@ class TopViewController: UIViewController, UITableViewDataSource, UITableViewDel
         navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.systemCyan]
         title = "EJDiary"
         
-        // rightButton
-        let rightButton = UIBarButtonItem(title: "config", style: .plain, target: self, action: #selector(configButton))
-        navigationItem.rightBarButtonItem = rightButton
-        rightButton.tintColor = .systemCyan
+        // configボタン デバッグのボタンしかないためコメントアウト対応
+        //let rightButton = UIBarButtonItem(title: "config", style: .plain, target: self, action: #selector(configButton))
+        //navigationItem.rightBarButtonItem = rightButton
+        //rightButton.tintColor = .systemCyan
     }
     
     /**
-     Page transition to the create diary screen.
+     Check whether to disable the create button.
      */
+    private func checkDisabledButton() {
+        let todayDiaryInfos = coreDataManager.fetchDiaryInfoForToday()
+        let test = todayDiaryInfos.isEmpty
+        if (!test) {
+            createButton.isEnabled = test
+            createButton.backgroundColor = UIColor(colorCode: "AAAAAA")
+        } else {
+            createButton.isEnabled = true
+            createButton.backgroundColor = UIColor(colorCode: "ABE1FA")
+        }
+    }
+    
     @IBAction func createDiaryButton(_ sender: Any) {
         performSegue(withIdentifier: "toCreateDiary", sender: self)
     }
     
     /**
-     設定画面に遷移する処理
+     設定画面に遷移する処理　デバッグのボタンしかないためコメントアウト
      */
     @objc func configButton() {
-        // Todo
-        performSegue(withIdentifier: "toConfig", sender: self)
+        // performSegue(withIdentifier: "toConfig", sender: self)
     }
 }
