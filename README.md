@@ -59,4 +59,5 @@
 | isJpTextHide | Bool |
 | title | String |
 
-## Japanese document
+## Document
+[Japanese Version](https://github.com/kazu09/EJDiarySwift/blob/main/README_JP.md)
