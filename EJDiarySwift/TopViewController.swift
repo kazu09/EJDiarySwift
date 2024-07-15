@@ -137,9 +137,9 @@ class TopViewController: UIViewController, UITableViewDataSource, UITableViewDel
      */
     private func checkDisabledButton() {
         let todayDiaryInfos = coreDataManager.fetchDiaryInfoForToday()
-        let test = todayDiaryInfos.isEmpty
-        if (!test) {
-            createButton.isEnabled = test
+        let isToday = todayDiaryInfos.isEmpty
+        if (!isToday) {
+            createButton.isEnabled = isToday
             createButton.backgroundColor = UIColor(colorCode: "AAAAAA")
         } else {
             createButton.isEnabled = true
